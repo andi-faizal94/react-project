@@ -16,7 +16,9 @@ function Input() {
         {inputValue}
         <br />
         <input onChange={onChange} placeholder="ketikan sesuatu" />
-        <button onClick={addButton}>Add</button>
+        <button type="button" onClick={addButton}>
+          Add
+        </button>
       </form>
     </>
   );

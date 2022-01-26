@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function UseStates() {
   let [counter, setCounter] = useState(0);
   //   console.log(setCounter, counter);
-  console.log(counter);
+  //   console.log(counter);
   const increment = () => {
     setCounter(counter + 2);
   };
@@ -19,6 +19,10 @@ function UseStates() {
   const divide = () => {
     setCounter(counter / 2);
   };
+  const reset = () => {
+    setCounter(0);
+  };
+
   return (
     <div>
       <span>{counter}</span>
@@ -27,6 +31,7 @@ function UseStates() {
       <button onClick={decrement}>-</button>
       <button onClick={divide}>:</button>
       <button onClick={multiply}>x</button>
+      <button onClick={reset}>reset</button>
     </div>
   );
 }
