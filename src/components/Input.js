@@ -10,6 +10,7 @@ function Input() {
   const onChange = (event) => {
     setInputValue(event.target.value);
   };
+
   return (
     <>
       <form>
